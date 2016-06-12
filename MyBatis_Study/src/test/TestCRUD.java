@@ -18,7 +18,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Test1 {
+public class TestCRUD {
 
     private SqlSession session;
     private UserMapperClass mapper;
