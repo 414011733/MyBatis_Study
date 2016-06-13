@@ -1,9 +1,20 @@
 package domain;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
 	private int id;
 	private String name;
 	private int age;
+
+	public User() {
+	}
+	
+	public User(int i, String string, int j) {
+		this.id = i;
+		this.name = string;
+		this.age = j;
+	}
 
 	public int getId() {
 		return id;

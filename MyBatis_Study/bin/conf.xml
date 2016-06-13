@@ -23,5 +23,8 @@
 		<mapper class="mapping.UserMapperClass" />
 		<!-- 表字段与实体字段名不一致 -->
 		<mapper resource="mapping/OrderMapper.xml"/>
+		<!-- 关联表查询 -->
+		<mapper resource="mapping/classMapper.xml" />
+		
 	</mappers>
 </configuration>
