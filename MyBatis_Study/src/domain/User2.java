@@ -3,15 +3,16 @@ package domain;
 import java.io.Serializable;
 import java.util.List;
 
-public class User implements Serializable{
+public class User2 implements Serializable{
 	private int id;
 	private String name;
 	private int age;
+	private List<Group> group;
 
-	public User() {
+	public User2() {
 	}
 	
-	public User(int i, String string, int j) {
+	public User2(int i, String string, int j) {
 		this.id = i;
 		this.name = string;
 		this.age = j;
@@ -41,6 +42,14 @@ public class User implements Serializable{
 		this.age = age;
 	}
 	
+	public List<Group> getGroup() {
+		return group;
+	}
+
+	public void setGroup(List<Group> group) {
+		this.group = group;
+	}
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", age=" + age + "]";

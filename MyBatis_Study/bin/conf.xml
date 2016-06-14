@@ -3,6 +3,12 @@
 <configuration>
 	<properties resource="db.properties"/>
 
+	<typeAliases>  
+        <typeAlias type="domain.User2" alias="User" />  
+        <typeAlias type="domain.Group" alias="Group" />  
+        <typeAlias type="domain.UserGroupLink" alias="UserGroupLink" />  
+    </typeAliases>
+
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC" />
@@ -25,6 +31,8 @@
 		<mapper resource="mapping/OrderMapper.xml"/>
 		<!-- 关联表查询 -->
 		<mapper resource="mapping/classMapper.xml" />
-		
+		<!-- 多对多user，group -->
+		<mapper resource="mapping/groupMapper.xml"/>
+		<mapper resource="mapping/user2Mapper.xml"/>
 	</mappers>
 </configuration>
